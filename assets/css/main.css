@@ -1,6 +1,17 @@
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/**
+ *
+ * card flip
+ *
+ */
+
 #team {
-    background: #eee !important;
+    /*background: #eee !important;*/
 }
 
 .btn-primary:hover,
@@ -126,11 +137,8 @@ section .section-title {
     border-radius: 50%;
 }
 
-
-.square {
-    width: 12px;
-    height: 12px;
-    border-radius: 4px;
-    background-color: #4b9cdb;
-}
-.loading .square {animation: loadingG 1.5s cubic-bezier(.17,.37,.43,.67) infinite;}
+/**
+ *
+ * end cardflip
+ *
+ */
