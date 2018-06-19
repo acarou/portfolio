@@ -1,10 +1,12 @@
 $(document).ready(function() {
 	if ($(document).scrollTop() > 20) {
-			$('#myBtn').show();
+		$('#myBtn').show();
 	}
 
 	$('#myBtn').click(function(){
-		$(document).scrollTop(0);
+		$('body, html').animate({
+			scrollTop:0
+		}, 'slow');
 	});
 
 	$(this).scroll(function() {
@@ -15,4 +17,15 @@ $(document).ready(function() {
 			$('#myBtn').hide();
 		}
 	});
+
+	$('a[href^="#"]').click(function(){
+	var the_id = $(this).attr("href");
+	if (the_id === '#') {
+		return;
+	}
+	$('html, body').animate({
+		scrollTop:$(the_id).offset().top
+	}, 'slow');
+	return false;
+});
 });
