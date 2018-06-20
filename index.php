@@ -128,7 +128,7 @@
 									<div class="card-body text-center">
 										<p><img class="img" src="assets/images/projets/my_meetic/my_meetic-03.jpg" alt="card image"></p>
 										<h4 class="card-title">My_meetic</h4>
-										<p class="card-text">Description project</p>
+										<p class="card-text">Le but du projet est de créer un site de rencontres à la manière d’un « Meetic »</p>
 										<a href="projet1.html" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
 									</div>
 								</div>
@@ -137,8 +137,8 @@
 								<div class="card">
 									<div class="card-body text-center mt-4">
 										<a href="projet1.html" class="card-link"><h4 class="card-title">My_meetic</h4></a>
-										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p class="card-text">Il est obligatoire de programmer en PHP orienté objet. 
+										Il est fortement conseillé d’utiliser le design pattern MVC. Il est fortement conseillé lors d’un envoi de données d’effectuer un requête ajax en JQuery afin de vérifier et envoyer les données, puis traiter la réponse. Il est obligatoire de gérer tous les cas d’erreurs possibles (injections SQL, doublons en DB, etc...).</p>
 									</div>
 								</div>
 							</div>
@@ -334,38 +334,56 @@
 			<div class="row" id="contact">
 				<div class="col-md-12">
 					<h1>Contacter moi</h1>
-					<form>
+					<form id="mailler" method="post">
 						<div class="form-group">
 							<label for="InputFirstName">Votre nom</label>
-							<input limit="30" type="text" class="form-control" id="InputFirstName" placeholder="Votre nom"> 
+							<input limit="30" type="text" class="form-control" name="InputFirstName" placeholder="Votre nom"> 
 						</div>
 						<div class="form-group">
 							<label for="InputName">Votre prénom</label>
-							<input limit="30" type="text" class="form-control" id="InputName" placeholder="Votre prénom"> 
+							<input limit="30" type="text" class="form-control" name="InputName" placeholder="Votre prénom"> 
 						</div>
 						<div class="form-group">
 							<label for="InputEmail">Votre email</label>
-							<input limit="50" type="email" class="form-control" id="InputEmail" placeholder="Votre email"> 
+							<input limit="50" type="email" class="form-control" name="InputEmail" placeholder="Votre email"> 
 						</div>
 						<div class="form-group">
 							<label for="InputSujet">Sujet</label>
-							<input limit="120" type="text" class="form-control" id="InputSujet" placeholder="Sujet"> 
+							<input limit="120" type="text" class="form-control" name="InputSujet" placeholder="Sujet"> 
 						</div>
 						<div class="form-group">
-							<label for="Textarea">Votre message</label>
-							<textarea class="form-control" id="Textarea" rows="3" placeholder="Message"></textarea>
+							<label for="Message">Votre message</label>
+							<textarea class="form-control" name="Message" rows="3" placeholder="Message"></textarea>
 						</div>
-						<button type="submit" class="btn btn-secondary">Submit</button>
+						<button name="validate" type="submit" class="btn btn-secondary">Submit</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 	<button id="myBtn" title="Go to top" class="fa fa-arrow-up"></button>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
 	<script src="assets/js/app.js"></script>
+
+	<?php
+	if (isset($_POST['validate'])) {
+		$name = $_POST['InputFirstName'];
+		$lastname = $_POST['InputName'];
+		$email = $_POST['InputName'];
+		$subject = $_POST['InputSujet'];
+		$message = $_POST['Message'];
+
+		$headers[] = 'MIME-Version: 1.0';
+		$headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+		     // En-têtes additionnels
+		$headers[] = "De: quentin.sommer1@gmail.com";
+		$headers[] = 'à : $lastname $name <$email>';
+
+		if (mail('quentin.sommer1@gmail.com',$subject,$message,$headers)) echo 'mail envoyer';
+		else echo 'mail non envoyer';
+	}
+	?>
 </body>
 </html>
