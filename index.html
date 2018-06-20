@@ -29,7 +29,13 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Info <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#info">Info <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projet">Projet</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skill">Compétence</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Me contacter</a>
@@ -45,7 +51,7 @@
 
 	<!-- Services section -->
 	<section id="what-we-do">
-		<div class="container">
+		<div class="container" id="info">
 			<h2 class="section-title mb-2 h1">What we do</h2>
 			<p class="text-center text-muted h5">Having and managing a correct marketing strategy is crucial in a fast moving market.</p>
 			<div class="row mt-5">
@@ -110,7 +116,7 @@
 	</section>
 	<!-- /Services section -->
 
-	<section id="team" class="pb-5">
+	<section id="projet" class="pb-5">
 		<div class="container">
 			<div class="row">
 				<!-- Team member -->
@@ -279,51 +285,47 @@
 		</div>
 	</section>
 
-		<div class="container">
-		<div class="row"> 
-			<div class="col-md-4">
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">60% Complete</span>
+	<section class="container">
+		<div class="row">
+			<div class="col-md-12" id="skill">
+				<h1 class="text-white">Mes compétences</h1>
+				<br>
+				<div class="progress" style="height: 20px">
+					<div class="progress-bar progress-bar-striped bg-warning" style="width:65%">
+						PHP
 					</div>
-					<span class="progress-type">HTML / HTML5</span>
-					<span class="progress-completed">60%</span>
 				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-						<span class="sr-only">40% Complete (success)</span>
+				<br>
+				<div class="progress" style="height: 20px">
+					<div class="progress-bar progress-bar-striped bg-success" style="width:60%">
+						html 5
 					</div>
-					<span class="progress-type">ASP.Net</span>
-					<span class="progress-completed">40%</span>
 				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-						<span class="sr-only">20% Complete (info)</span>
+				<br>
+				<div class="progress" style="height: 20px">
+					<div class="progress-bar progress-bar-striped" style="width:45%">
+						Java script / jquery
 					</div>
-					<span class="progress-type">Java</span>
-					<span class="progress-completed">20%</span>
 				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-						<span class="sr-only">60% Complete (warning)</span>
+				<br>
+				<div class="progress" style="height: 20px">
+					<div class="progress-bar progress-bar-striped bg-danger" style="width:40%">
+						laravel / symfony
 					</div>
-					<span class="progress-type">JavaScript / jQuery</span>
-					<span class="progress-completed">60%</span>
 				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-						<span class="sr-only">80% Complete (danger)</span>
+				<br>
+				<div class="progress" style="height: 20px">
+					<div class="progress-bar progress-bar-striped bg-info" style="width:30%">
+						css
 					</div>
-					<span class="progress-type">CSS / CSS3</span>
-					<span class="progress-completed">80%</span>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="py-5 text-white" id="contact">
+	<div class="py-5 text-white">
 		<div class="container">
-			<div class="row">
+			<div class="row" id="contact">
 				<div class="col-md-12">
 					<h1>Contacter moi</h1>
 					<form>
@@ -353,6 +355,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<button id="myBtn" title="Go to top" class="fa fa-arrow-up"></button>
 

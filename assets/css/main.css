@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
-    background-image: url('../images/background.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /**
@@ -10,7 +14,7 @@ body {
  *
  */
 
-#team {
+ #projet {
     /*background: #eee !important;*/
 }
 
@@ -39,7 +43,7 @@ section .section-title {
     text-transform: uppercase;
 }
 
-#team .card {
+#projet .card {
     border: none;
     background: #ffffff;
 }
@@ -141,13 +145,13 @@ section .section-title {
  *
  * end cardflip
  *
-**/
+ **/
 
 /**
  * up btn
  * 
  */
-#myBtn {
+ #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -171,11 +175,15 @@ section .section-title {
  * 
  */
 
-/**********************
-/***** Services *******
-/*********************/
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section{
+
+/**
+ *
+ *  what we do
+ * 
+ */
+
+ @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ section{
     padding: 60px 0;
 }
 section .section-title{
@@ -252,3 +260,10 @@ section .section-title{
     -moz-transition: .5s all ease;
     transition: .5s all ease;
 }
+
+/**
+ *
+ *  what we do end
+ * 
+ */
+
