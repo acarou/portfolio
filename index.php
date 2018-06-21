@@ -6,16 +6,17 @@
 	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- css bootstrap 4 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-all.min.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
 	<!-- js bootstrap 4 -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
 
 </head>
 <body>
@@ -334,22 +335,22 @@
 			<div class="row" id="contact">
 				<div class="col-md-12">
 					<h1>Contacter moi</h1>
-					<form id="mailler" method="post">
+					<form action="https://formspree.io/quentin.sommer1@gmail.com" id="mailler" method="post">
 						<div class="form-group">
 							<label for="InputFirstName">Votre nom</label>
-							<input limit="30" type="text" class="form-control" name="InputFirstName" placeholder="Votre nom"> 
+							<input limit="30" type="text" class="form-control" name="Nom" placeholder="Votre nom"> 
 						</div>
 						<div class="form-group">
 							<label for="InputName">Votre prénom</label>
-							<input limit="30" type="text" class="form-control" name="InputName" placeholder="Votre prénom"> 
+							<input limit="30" type="text" class="form-control" name="Prénom" placeholder="Votre prénom"> 
 						</div>
 						<div class="form-group">
 							<label for="InputEmail">Votre email</label>
-							<input limit="50" type="email" class="form-control" name="InputEmail" placeholder="Votre email"> 
+							<input limit="50" type="email" class="form-control" name="email" placeholder="Votre email"> 
 						</div>
 						<div class="form-group">
 							<label for="InputSujet">Sujet</label>
-							<input limit="120" type="text" class="form-control" name="InputSujet" placeholder="Sujet"> 
+							<input limit="120" type="text" class="form-control" name="Sujet" placeholder="Sujet"> 
 						</div>
 						<div class="form-group">
 							<label for="Message">Votre message</label>
@@ -363,27 +364,5 @@
 	</div>
 	<button id="myBtn" title="Go to top" class="fa fa-arrow-up"></button>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
-	<script src="assets/js/app.js"></script>
-
-	<?php
-	if (isset($_POST['validate'])) {
-		$name = $_POST['InputFirstName'];
-		$lastname = $_POST['InputName'];
-		$email = $_POST['InputName'];
-		$subject = $_POST['InputSujet'];
-		$message = $_POST['Message'];
-
-		$headers[] = 'MIME-Version: 1.0';
-		$headers[] = 'Content-type: text/html; charset=iso-8859-1';
-
-		     // En-têtes additionnels
-		$headers[] = "De: quentin.sommer1@gmail.com";
-		$headers[] = 'à : $lastname $name <$email>';
-
-		if (mail('quentin.sommer1@gmail.com',$subject,$message,$headers)) echo 'mail envoyer';
-		else echo 'mail non envoyer';
-	}
-	?>
 </body>
 </html>
