@@ -157,14 +157,14 @@
 										<p><img class=" img" src="assets/images/projets/my_cinema/my_cinema-01.jpg" alt="card image"></p>
 										<h4 class="card-title">My_cinema</h4>
 										<p class="card-text">Vous allez créer un site permettant de gérer un cinéma.</p>
-										<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+										<a href="projet2.html" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
 									</div>
 								</div>
 							</div>
 							<div class="backside">
 								<div class="card">
 									<div class="card-body text-center mt-4">
-										<a href="#" class="card-link"><h4 class="card-title">My_cinema</h4></a>
+										<a href="projet2.html" class="card-link"><h4 class="card-title">My_cinema</h4></a>
 										<p class="card-text">À partir de la base de données MySQL fournie avec le sujet, vous allez devoir réaliser un site qui permettra d’interagir
 avec cette dernière. Ne passez pas trop de temps sur l’aspect visuel du site, le but du projet est orienté PHP et MySQL.
 Bien entendu, votre page devra être valide HTML5 et nous tiendrons compte de l’aspect général du site.</p>
@@ -299,7 +299,7 @@ Bien entendu, votre page devra être valide HTML5 et nous tiendrons compte de l�
 				</div>
 				<br>
 				<div class="progress" style="height: 20px">
-					<div class="progress-bar progress-bar-striped bg-successn" style="width:60%">
+					<div class="progress-bar progress-bar-striped bg-success" style="width:60%">
 						html 5
 					</div>
 				</div>
