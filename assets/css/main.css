@@ -226,7 +226,8 @@ section .section-title{
     
 }
 #what-we-do .card .card-block:before{
-    font-family: FontAwesome;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     position: absolute;
     font-size: 39px;
     color: #007b5e;
@@ -244,7 +245,7 @@ section .section-title{
     content: "\f00c";
 }
 #what-we-do .card .block-4:before{
-    content: "\f209";
+    content: "\f1b9";
 }
 #what-we-do .card .block-5:before{
     content: "\f0a1";
@@ -267,9 +268,9 @@ section .section-title{
  */
 
  .progress {
-background: #D3CCE3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #projet .card-text {
