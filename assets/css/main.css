@@ -36,7 +36,6 @@ header {
 section .section-title {
     text-align: center;
     color: #007b5e;
-    margin-bottom: 50px;
     text-transform: uppercase;
 }
 
@@ -130,10 +129,10 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
+    height: 400px;
     min-height: 312px;
-    max-height: 312px;
-    height: 312px;
-    max-width: 510px;
+    max-height: 432px;
+    max-width: 555px;
 }
 
 .backside .card a {
@@ -193,7 +192,6 @@ section .section-title {
 
 #what-we-do{
     padding: 60px 0;
-    margin-bottom:50px;
     background:#ffffff;
 }
 #what-we-do .card{
