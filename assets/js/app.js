@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	if ($(document).scrollTop() > 20) {
+	if ($(this).scrollTop() > 20) {
 		$('#myBtn').show();
 	}
 
