@@ -285,10 +285,13 @@ section .section-title{
 #projet .card-text {
     line-height: 20px;
 }
+@media (max-width:575px) {
+    #myBtn:hover { 
+    background: red; 
+    }
 
-@media (hover: none) {
-    a:hover { color: inherit; }
-
-    #projet .card-text 
-    { line-height: 10px; }
+    #projet .card-text { 
+        line-height: 10px; 
+    }
+    
 }
