@@ -29,3 +29,13 @@ $(document).ready(function() {
 		return false;
 	});
 });
+var lastToggle;
+
+function flipCard(e) {
+	e.toggleClass('hover');
+
+	if (lastToggle && lastToggle.hasClass('hover')){
+		lastToggle.removeClass('hover');
+	}
+	lastToggle = e;
+}
