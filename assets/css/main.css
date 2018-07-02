@@ -173,7 +173,11 @@ section .section-title {
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #fb3939; /* Add a dark-grey background on hover */
+}
+
+#myBtn:active {
+    background-color: green;
 }
 /**
  * end up btn
@@ -280,4 +284,11 @@ section .section-title{
 
 #projet .card-text {
     line-height: 20px;
+}
+
+@media (hover: none) {
+    a:hover { color: inherit; }
+
+    #projet .card-text 
+    { line-height: 10px; }
 }

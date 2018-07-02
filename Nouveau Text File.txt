@@ -1,0 +1,28 @@
+UTILISER SINFONY
+
+- jquerry
+- bootstarp
+
+
+
+
+﻿nom :
+prénom :
+age: 
+date de naissance :
+
+CV telechargable
+
+- mes diplome
+
+- mes projet (3): 
+screen + expliquation
+
+
+- hobbies , centre d'intérets , langue
+
+- formulaire envoie email :
+nom prénom , mail , sujet , message
+
+coordonéées email pro gmail pro
+
