@@ -33,9 +33,10 @@ var lastToggle;
 
 function flipCard(e) {
 	e.toggleClass('hover');
-
-	if (lastToggle && lastToggle.hasClass('hover')){
+	if (lastToggle && lastToggle != e) {
 		lastToggle.removeClass('hover');
 	}
-	lastToggle = e;
+	if (e.hasClass('hover')) {
+		lastToggle = e;
+	}
 }
